@@ -1,1 +1,212 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex's MSAN 622 Page</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+        body {
+          font-family: 'Open Sans', sans-serif;
+          color: #666;
+        }
+        /* STRUCTURE */
+        #pagewrap {
+            padding: 5px;
+            width: 960px;
+            margin: 20px auto;
+        }
+        header {
+            height: 110px;
+            padding: 0 15px;
+        }
+        #content {
+            width: 290px;
+            float: left;
+            padding: 5px 15px;
+        }
+        #middle {
+            width: 294px; /* Account for margins + border values */
+            float: left;
+            padding: 5px 15px;
+            margin: 0px 5px 5px 5px;
+        }
+        #sidebar {
+            width: 270px;
+            padding: 5px 15px;
+            float: left;
+        }
+        footer {
+            clear: both;
+            padding: 0 15px;
+        }
+
+        .header img {
+          float: left;
+          width: 75px;
+          height: 75px;
+          background: #555;
+        }
+
+        .header h1 {
+          position: relative;
+          top: 18px;
+          left: 10px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+        }
+
+        .icon-email {
+            background-image: url("email_icon.png");
+            background-size: 40px 40px;
+        }
+
+        .icon-linkedin {
+            background-image: url("linkedin_icon.png");
+            background-size: 40px 40px;
+        }
+
+        .icon-github {
+            background-image: url("github_icon.png");
+            background-size: 40px 40px;
+        }
+        /************************************************************************************
+        MEDIA QUERIES
+        *************************************************************************************/
+        /* for 980px or less */
+        @media screen and (max-width: 980px) {
+            #pagewrap {
+                width: 94%;
+            }
+            #content {
+                width: 41%;
+                padding: 1% 4%;
+            }
+            #middle {
+                width: 41%;
+                padding: 1% 4%;
+                margin: 0px 0px 5px 5px;
+                float: right;
+            }
+            #sidebar {
+                clear: both;
+                padding: 1% 4%;
+                width: auto;
+                float: none;
+            }
+            header, footer {
+                padding: 1% 4%;
+            }
+        }
+        /* for 700px or less */
+        @media screen and (max-width: 600px) {
+            #content {
+                width: auto;
+                float: none;
+            }
+            #middle {
+                width: auto;
+                float: none;
+                margin-left: 0px;
+            }
+            #sidebar {
+                width: auto;
+                float: none;
+            }
+        }
+        /* for 480px or less */
+        @media screen and (max-width: 480px) {
+            header {
+                height: auto;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            #sidebar {
+                display: none;
+            }
+        }
+
+        #content {
+            background: #f8f8f8;
+        }
+        #sidebar {
+            background: #f8f8f8;
+        }
+        header, #content, #middle, #sidebar {
+            margin-bottom: 5px;
+        }
+
+        #pagewrap, header, #content, #middle, #sidebar, footer {
+            border: solid 1px #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="pagewrap">
+
+	<header>
+		<div class="header">
+            <img src="alex_face.jpg" alt="logo" align="center" />
+            <h1>Welcome to Alex Romriell's Project Page</h1>
+        </div>
+	</header>
+
+	<section id="content">
+		<h2>World's Biggest Data Breaches</h2>
+        <img src="hacks.png" alt="" style="width:300px;height:150px;">
+        <p>This is a visualization of the data breaches from 2004 - 2015</p>
+        <p> The data comes from the
+            <a href="http://www.informationisbeautiful.net/data">Information is Beautiful</a>
+            website.
+        </p>
+        <p>You can interact with the data
+            <a href="https://bl.ocks.org/asromriell/raw/bda1f2b8d69fbaf33dfe8a274231eea3/">here</a>
+        </p>
+    </section>
+
+        <!--* The data comes from the [Information is Beautiful](http://www.informationisbeautiful.net/data/) website.-->
+  <!--* [World's Biggest Data Breaches (csv)](http://bit.ly/bigdatabreaches)-->
+
+	<section id="middle">
+		<h2>Project 2</h2>
+        <img src="" alt="" style="width:250px;height:250px;">
+        <p>Project 2 description goes here</p>
+    </section>
+
+	<aside id="sidebar">
+		<h2>Project 3</h2>
+        <img src="" alt="" style="width:250px;height:250px;">
+        <p>Project 3 content goes here</p>
+    </aside>
+
+	<footer>
+		<h4>
+            I am a graduate student in the Master's of Analytics (Data Science)
+            program at the University of San Francisco. I graduate July 2016.
+            <br> I'll be posting more visualizations and other projects here.
+        </h4>
+		<p style="text-align: center">
+            <!--<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>-->
+            <!--<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/alexromriell"-->
+                    <!--data-format="hover" data-related="false"></script>-->
+            <a href="mailto:asromriell@usfca.edu">
+		        <i class="icon icon-email"></i></a>
+		    <a href="https://www.linkedin.com/in/alexromriell">
+		    	<i class="icon icon-linkedin"></i></a>
+		    <a href="https://www.github.com/asromriell">
+		        <i class="icon icon-github"></i>
+		    </a>
+        </p>
+	</footer>
+
+</div>
+
+</body>
+</html>
