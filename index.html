@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alex's MSAN 622 Page</title>
+    <title>Portfolio: Alex Romriell</title>
     <style>
         @import url(http://fonts.googleapis.com/css?family=Open+Sans);
         body {
@@ -12,11 +12,11 @@
         /* STRUCTURE */
         #pagewrap {
             padding: 5px;
-            width: 960px;
+            width: 1080px;
             margin: 20px auto;
         }
         header {
-            height: 110px;
+            height: 470px;
             padding: 0 15px;
         }
         #content {
@@ -25,13 +25,15 @@
             padding: 5px 15px;
         }
         #middle {
-            width: 294px; /* Account for margins + border values */
+            width: 324px; /* Account for margins + border values */
+            height: 525px;
             float: left;
             padding: 5px 15px;
             margin: 0px 5px 5px 5px;
         }
         #sidebar {
-            width: 270px;
+            width: 325px;
+            height: 525px;
             padding: 5px 15px;
             float: left;
         }
@@ -42,15 +44,20 @@
 
         .header img {
           float: left;
-          width: 75px;
-          height: 75px;
+          width: 300px;
+          height: 300px;
           background: #555;
+          border-width: 10px;
         }
 
         .header h1 {
           position: relative;
           top: 18px;
           left: 10px;
+        }
+
+        img.hasBorder {
+            border:15px solid white;
         }
 
         .icon {
@@ -60,17 +67,17 @@
         }
 
         .icon-email {
-            background-image: url("email_icon.png");
+            background-image: url("images/email_icon.png");
             background-size: 40px 40px;
         }
 
         .icon-linkedin {
-            background-image: url("linkedin_icon.png");
+            background-image: url("images/linkedin_icon.png");
             background-size: 40px 40px;
         }
 
         .icon-github {
-            background-image: url("github_icon.png");
+            background-image: url("images/github_icon.png");
             background-size: 40px 40px;
         }
         /************************************************************************************
@@ -153,56 +160,37 @@
 
 	<header>
 		<div class="header">
-            <img src="alex_face.jpg" alt="logo" align="center" />
-            <h1>Welcome to Alex Romriell's Project Page</h1>
-        </div>
-	</header>
+            <img class="hasBorder" src="images/alex.png" alt="logo" align="center"/>
+            <h1>Welcome to Alex Romriell's Portfolio</h1>
+            <p>
+                I am a data scientist with a background in chemical engineering.
+                I have five years of experience as a data analysis/production
+                engineer for a chemical manufacturing facility. Now, I am about to
+                complete a Master’s degree in Data Analytics at USF.
+            </p>
 
-	<section id="content">
-		<h2>World's Biggest Data Breaches</h2>
-        <img src="hacks.png" alt="" style="width:300px;height:200px;" border="1">
-        <p>This is a visualization of the data breaches from 2004 - 2015</p>
-        <p> The data comes from the
-            <a href="http://www.informationisbeautiful.net/data">Information is Beautiful</a>
-            website.
-        </p>
-        <p>You can interact with the data through bl.ocks.org
-            <a href="https://bl.ocks.org/asromriell/raw/bda1f2b8d69fbaf33dfe8a274231eea3/">here</a>
-        </p>
-        <p> </p>
-    </section>
+            <p>
+                A little about me technically, I am confident in pulling data from
+                disparate sources into one convenient, easy-to-access location.
+                My skills include: cleaning, analyzing, and visualizing large datasets
+                in Python (numpy, pandas, scikit-learn), R, SQL, D3, Spark, SAS,
+                Tableau, Microsoft Office products, and distributed systems on AWS.
+                I have a strong understanding of many machine learning models.
+                I am a quick learner and willing to adapt to various technology and
+                programming changes.
+            </p>
 
+            <p>
+                Personally, I have an easy-going personality, am motivated to
+                continue working until I have a fantastic end product, and enjoy
+                teaching others who aren’t technically trained about how data can
+                help them make decisions. My favorite projects to work on so far
+                have been data visualizations and maps. Please enjoy browsing through
+                some of the projects I have completed thus far and feel free to contact me
+                with any questions.
+            </p>
 
-	<section id="middle">
-		<h2>Bike Parking in SF: 1997-2014
-        </h2>
-        <img src="sf_bike_parking.png" alt="" style="width:300px;height:200px;" border="1">
-        <p>An interactive map showing the growth of bike parking locations over the past 15 years</p>
-        <p> The data comes from the SF Data Portal:
-            <a href="https://data.sfgov.org/">data.sfgov.org</a>
-        </p>
-        <p>
-            Interact with the map:
-            <a href="https://bl.ocks.org/asromriell/raw/0d36bf65a9bcb5a6dc3a53d792396d0b/">here</a>
-        </p>
-    </section>
-
-	<aside id="sidebar">
-		<h2>Project 3</h2>
-        <img src="" alt="" style="width:250px;height:250px;">
-        <p>Project 3 content goes here</p>
-    </aside>
-
-	<footer>
-		<h4>
-            I am a graduate student in the Master's of Analytics (Data Science)
-            program at the University of San Francisco. I graduate July 2016.
-            <br> I'll be posting more visualizations and other projects here.
-        </h4>
-		<p style="text-align: center">
-            <!--<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>-->
-            <!--<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/alexromriell"-->
-                    <!--data-format="hover" data-related="false"></script>-->
+            <p style="text-align: center">
             <a href="mailto:asromriell@usfca.edu">
 		        <i class="icon icon-email"></i></a>
 		    <a href="https://www.linkedin.com/in/alexromriell">
@@ -210,6 +198,192 @@
 		    <a href="https://www.github.com/asromriell">
 		        <i class="icon icon-github"></i>
 		    </a>
+            </p>
+        </div>
+	</header>
+
+    <!--First Row 1-->
+	<section id="sidebar">
+		<h2>World's Data Breaches</h2>
+        <a href="https://bl.ocks.org/asromriell/raw/bda1f2b8d69fbaf33dfe8a274231eea3/">
+            <img src="images/hacks.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            This is a visualization of some of the world's largest data breaches from 2004 - 2015,
+            broken down by method of breach and severity of breach.
+        </p>
+        <p>
+            The data comes from the
+            <a href="http://www.informationisbeautiful.net/data">Information is Beautiful</a>
+            website.
+        </p>
+
+         <p>
+            Class: MSAN 622 - Data Visualization
+        </p>
+    </section>
+
+    <!--First Row 2-->
+	<section id="middle">
+		<h2>Bike Parking in SF
+        </h2>
+        <a href="https://bl.ocks.org/asromriell/raw/0d36bf65a9bcb5a6dc3a53d792396d0b/">
+            <img src="images/sf_bike_parking.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            An interactive map showing the growth of bike parking locations over the past 15 years</p>
+        <p>
+            The data comes from the SF Data Portal:
+            <a href="https://data.sfgov.org/">data.sfgov.org</a>
+        </p>
+         <p>
+            Class: MSAN 622 - Data Visualization
+        </p>
+    </section>
+
+    <!--First Row 3-->
+	<section id="sidebar">
+		<h2>D3 Data Dashboard</h2>
+        <a href="https://bl.ocks.org/asromriell/raw/a73bfcb0688ab09d1a3b84aa2070cee7/">
+            <img src="images/dashboard.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            This was my first dive into D3. I needed to make the user data quickly accessible
+            to my client without having to look through dozens of charts. Ultimately this dashboard
+            will be backed by a Flask App that will ping the database and update the data. The data
+            in this example was anonymized and randomly generated.
+        </p>
+         <p>
+            Class: MSAN 627 - Practicum
+        </p>
+    </section>
+
+    <!--Second Row 1-->
+    <section id="sidebar">
+		<h2>Emotion Recognition</h2>
+        <a href="https://github.com/asromriell/projects/tree/master/Emotobot-">
+            <img src="images/emotobot.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            My team and I wrote our own convolutional neural network to detect emotion in still
+            images. There are 7 basic emotional responses. We achieved 96% classification accuracy
+            for binary emotion detection (i.e. happy vs. not happy) and 67% classification accuracy
+            when all seven emotions were present. View the report and presentation on
+                <a href="https://github.com/asromriell/projects/tree/master/Emotobot-">Github</a>
+
+        <p>
+            Class: MSAN 630 - Machine Learning 2
+        </p>
+    </section>
+
+    <!--Second Row 2-->
+	<section id="middle">
+		<h2>Maximize Auction Payout</h2>
+        <a href="specialty_auctions.pdf">
+            <img src="images/bids.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            The beta distribution, with alpha and beta values less than 1, closely models the
+            distribution of values expected in a specialty items auction. Ad agencies, and other
+            bidding platforms, can use this distribution (as well as other well-defined distributions)
+            to estimate and maximize expected payout.
+        </p>
+
+        <p>
+            Class: MSAN 603 - Business Strategies for Big Data
+        </p>
+    </section>
+
+    <!--Second Row 3-->
+	<section id="sidebar">
+		<h2>Best Subset Regression</h2>
+        <a href="cross_validation.pdf">
+            <img src="images/best_subset.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            Here I explored writing my own cross-validation function, best subset, ridge, and lasso
+            regression methods in R. Each method was used in order to find leading indicators to predict
+            Room and Board for over 700 Colleges and Universities across America in 2013.
+        </p>
+        <p>
+            Class: MSAN 621 - Machine Learning 1
+        </p>
+    </section>
+
+
+    <!--Third Row 1-->
+    <section id="sidebar">
+		<h2>Emotion Recognition</h2>
+        <a href="https://github.com/asromriell/projects/tree/master/Emotobot-">
+            <img src="images/emotobot.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            My team and I wrote our own convolutional neural network to detect emotion in still
+            images. There are 7 basic emotional responses. We achieved 96% classification accuracy
+            for binary emotion detection (i.e. happy vs. not happy) and 67% classification accuracy
+            when all seven emotions were present. View the report and presentation on
+                <a href="https://github.com/asromriell/projects/tree/master/Emotobot-">Github</a>
+
+        <p>
+            Class: MSAN 630 - Machine Learning 2
+        </p>
+    </section>
+
+    <!--Third Row 2-->
+	<section id="middle">
+		<h2>Maximize Auction Payout</h2>
+        <a href="specialty_auctions.pdf">
+            <img src="images/bids.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            The beta distribution, with alpha and beta values less than 1, closely models the
+            distribution of values expected in a specialty items auction. Ad agencies, and other
+            bidding platforms, can use this distribution (as well as other well-defined distributions)
+            to estimate and maximize expected payout.
+        </p>
+
+        <p>
+            Class: MSAN 603 - Business Strategies for Big Data
+        </p>
+    </section>
+
+    <!--Third Row 3-->
+	<section id="sidebar">
+		<h2>Best Subset Regression</h2>
+        <a href="cross_validation.pdf">
+            <img src="images/best_subset.png" alt="" style="width:300px;height:200px;" border="1">
+        </a>
+
+        <p>
+            Here I explored writing my own cross-validation function, best subset, ridge, and lasso
+            regression methods in R. Each method was used in order to find leading indicators to predict
+            Room and Board for over 700 Colleges and Universities across America in 2013.
+        </p>
+        <p>
+            Class: MSAN 621 - Machine Learning 1
+        </p>
+    </section>
+
+	<footer>
+        <p>
+
+        </p>
+
+		<p style="text-align: center">
+            <a href="mailto:asromriell@usfca.edu">
+		        <i class="icon icon-email"></i></a>
+		    <a href="https://www.linkedin.com/in/alexromriell">
+		    	<i class="icon icon-linkedin"></i></a>
+		    <a href="https://www.github.com/asromriell">
+		        <i class="icon icon-github"></i>
         </p>
 	</footer>
 
